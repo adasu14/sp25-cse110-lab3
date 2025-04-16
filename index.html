@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pomodoro Timer First Brainstorm</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+      <h1>Pomodoro Timer First Brainstorm</h1>
+      <nav>
+        <ul>
+          <li><a href="#attendance">Attendance</a></li>
+          <li><a href="#agenda">Agenda</a></li>
+          <li><a href="#unfinished">Unfinished Business</a></li>
+          <li><a href="#new">New Business</a></li>
+        </ul>
+      </nav>
+      <h2>Brainstorming Session</h2>
+      <h3>Date: April 15, 2025</h3>
+    </header>
+  
+    <main>
+      <section id="attendance">
+        <h2>Attendance</h2>
+        <ul>
+          <li>Alice</li>
+          <li>Bob</li>
+          <li>Charlie</li>
+        </ul>
+      </section>
+  
+      <section id="agenda">
+        <h2>Agenda</h2>
+        <ol>
+          <li>Discuss timer interface ideas</li>
+          <li>Break/session scheduling</li>
+        </ol>
+      </section>
+  
+      <section id="unfinished">
+        <h2>Unfinished Business</h2>
+        <p>We still need to finalize the UI design and accessibility features.</p>
+      </section>
+  
+      <section id="new">
+        <h2>New Business</h2>
+        <p>Discussed integrating with a task tracker.</p>
+      </section>
+  
+      <section>
+        <h2>Diagrams</h2>
+        <img src="image.png" alt="Whiteboard UI sketch of the timer app">
+      </section>
+  
+      <section>
+        <h2>Meeting Media</h2>
+        <audio controls>
+          <source src="meeting-audio.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <video controls width="320" height="240">
+          <source src="meeting-video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </section>
+  
+      <hr>
+  
+      <section>
+        <h2>Feedback Form</h2>
+        <form>
+          <fieldset>
+            <legend>Meeting Feedback</legend>
+  
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+  
+            <label for="date">Date of Meeting:</label>
+            <input type="date" id="date" name="date"><br><br>
+  
+            <label>Was the meeting helpful?</label><br>
+            <input type="radio" id="yes" name="helpful" value="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="helpful" value="no">
+            <label for="no">No</label><br><br>
+  
+            <label>Topics of Interest:</label><br>
+            <input type="checkbox" name="topics" value="UI"> UI
+            <input type="checkbox" name="topics" value="UX"> UX
+            <input type="checkbox" name="topics" value="Logic"> Logic<br><br>
+  
+            <label for="comments">Additional Comments:</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+  
+            <label for="topic">Choose a topic:</label>
+            <input list="topics" name="topic" id="topic">
+            <datalist id="topics">
+              <option value="UI Design">
+              <option value="Timer Logic">
+              <option value="Notifications">
+            </datalist><br><br>
+  
+            <label for="section">Favorite Section:</label>
+            <select id="section" name="section">
+              <option value="agenda">Agenda</option>
+              <option value="attendance">Attendance</option>
+              <option value="media">Media</option>
+            </select><br><br>
+  
+            <button type="submit">Submit</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+  
+    <footer>
+      <p><strong>Team Pomodoro</strong> | April 2025</p>
+    </footer>
+  </body>
+  
+</html>

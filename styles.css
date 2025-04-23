@@ -1,0 +1,176 @@
+/* General CSS Topics */
+
+:root {
+    --main-bg-color: beige;
+    --highlight-color: hsl(210, 100%, 50%);
+    --fallback-color: red;
+  }
+  
+  body {
+    background-color: var(--main-bg-color, var(--fallback-color));
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2 {
+    color: color-mix(in srgb, orange 70%, blue 30%);
+    text-align: center;
+  }
+  
+  p {
+    color: #333;
+    text-align: justify;
+  }
+  
+  a {
+    color: rgb(0, 123, 255);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: rgba(255, 0, 0, 0.8);
+  }
+  
+  a:active {
+    color: #008000;
+  }
+  
+  ul, ol {
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    padding: 10px 15px 10px 15px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #888;
+    border-radius: 8px;
+  }
+  
+  /* Display and Box Model */
+  
+  nav ul {
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  section {
+    margin: auto;
+    max-width: 800px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    display: block;
+  }
+  
+  img, video, audio {
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+  
+  form {
+    background-color: #ffffff;
+    padding: 2rem;
+    margin-top: 2rem;
+    border: 1px solid #000;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  
+  button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: color(display-p3 0.2 0.7 0.4);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0066cc;
+  }
+  
+  /* Positioning */
+  
+  header {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    padding: 1rem;
+    border-bottom: 2px solid #ccc;
+  }
+  
+  footer {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+  }
+  
+  /* Responsiveness */
+  
+  @media (max-width: 600px) {
+    section {
+      padding: 10px;
+    }
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  /* Fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+  
+  /* CSS Selectors */
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  #attendance {
+    background-color: hsla(100, 50%, 90%, 0.5);
+  }
+  
+  section > h2 {
+    font-weight: bold;
+  }
+  
+  li ~ li {
+    font-style: italic;
+  }
+  
+  h2 + p {
+    font-size: 1.1rem;
+  }
+  
+  section.attendance {
+    border-color: red;
+  }
+  
+  [alt="Whiteboard UI sketch of the timer app"] {
+    border: 2px dashed #333;
+  }
+  
+  main:has(video) {
+    border: 4px solid orange;
+  }
+  
+  section {
+    & h2 {
+      text-transform: uppercase;
+    }
+    & form {
+      margin-top: 1rem;
+    }
+  }
+  
